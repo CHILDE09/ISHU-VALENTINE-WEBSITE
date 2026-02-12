@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&family=Caveat:wght@400;600&display=swap');
+
+
+:root {
+  --bg: #ffd6e8;
+  --card: #ffeaf3;
+  --accent: #ff4d6d;
+  --text: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+  background: var(--card);
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  width: 90%;
+  max-width: 400px;
+  margin: 100px auto;
+
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.secondary {
+  background: #fff;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+.gifts {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gift {
+  background: #fff;
+  padding: 25px;
+  width: 100px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.gift:hover {
+  transform: scale(1.1);
+}
+
+/* Gift 2 images */
+.gallery {
+  display: flex;
+  gap: 25px;   /* slightly more space */
+  justify-content: center;
+}
+
+
+.gallery img {
+  width: 190px;        /* medium perfect size */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+
+/* Poem paper (for gift 3 only) */
+.poem-paper {
+  background: #fffdf7;
+  padding: 25px;
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+
+.actions {
+  margin-top: 15px;
+}
+/* =========================
+   ROSE (GIFT 1) PAGE STYLES
+   ========================= */
+
+.rose-page {
+  background: #ffd6e8;
+  min-height: 100vh;
+  padding: 30px 20px;
+  padding-bottom: 150px;  /* add this */
+  text-align: center;
+}
+
+
+/* Title */
+.rose-title {
+  font-family: 'Pacifico', cursive;
+  color: #ff4d6d;
+  font-size: 2.3rem;       /* BIGGER */
+  margin-bottom: 30px;
+}
+
+/* Wrapper */
+.rose-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+/* Bouquet (BIG) */
+.bouquet {
+  width: 260px;            /* MUCH BIGGER */
+  z-index: 2;
+}
+
+/* Scrapbook note style */
+.note {
+  font-family: 'Patrick Hand', cursive;   /* handwritten */
+  background: #fff9ec;                    /* paper color */
+  color: #6b3e2e;                         /* warm ink */
+  border-radius: 14px;
+  max-width: 230px;
+  line-height: 1.4;
+  position: relative;
+
+  box-shadow:
+    0 6px 10px rgba(0,0,0,0.12),
+    inset 0 0 0 1px rgba(255,255,255,0.6);
+}
+
+/* Tape effect */
+.note::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 30%;
+  width: 60px;
+  height: 18px;
+  background: rgba(255, 214, 120, 0.7);
+  border-radius: 4px;
+}
+
+.note.big {
+  font-size: 1.1rem;       /* BIG TEXT */
+  padding: 20px 24px;      /* BIG BOX */
+}
+
+/* Rotations */
+.note.left {
+  transform: rotate(-5deg);
+}
+
+.note.right {
+  transform: rotate(5deg);
+}
+
+/* Bottom notes */
+.bottom-notes {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 35px;
+}
+
+/* Stickers */
+.sticker {
+  position: absolute;
+  font-size: 1.8rem;
+  pointer-events: none;
+}
+
+.s1 { top: -30px; left: 40px; }
+.s2 { top: 20px; right: 50px; }
+.s3 { bottom: 30px; left: 60px; }
+.s4 { bottom: -20px; right: 80px; }
+
+/* Click me */
+.click-me {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #ff4d6d;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* =========================
+   REAL HANDWRITTEN PAPER
+   ========================= */
+
+.letter-wrapper {
+  min-height: 100vh;
+  background: #ffd6e8;
+  padding: 60px 20px;
+}
+
+.paper {
+  background: #fffdf5;
+  max-width: 650px;
+  margin: 0 auto 30px;
+  padding: 60px 60px;
+  border-radius: 8px;
+  position: relative;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+
+  /* REAL NOTEBOOK LINES */
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #fffdf5 0px,
+    #fffdf5 34px,
+    #f8c6d0 35px,
+    #fffdf5 36px
+  );
+  border-left: 4px solid #f28ca3;
+padding-left: 50px;
+
+}
+
+
+.paper-title {
+  font-family: 'Pacifico', cursive;
+  color: #e63950;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.4rem;
+}
+
+.paper-text {
+  font-family: 'Caveat', cursive;
+  font-size: 1.8rem;
+  line-height: 36px;  /* must match line spacing above */
+  color: #d62828;
+}
+
+.cloud-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin-top: 150px;   /* increase this */
+}
+
+
+/* Cloud */
+.cloud {
+  position: relative;
+  width: 200px;
+  height: 90px;
+  background: white;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #ff4d6d;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: 0.3s;
+  z-index: 2;
+
+}
+
+.cloud:hover {
+  transform: scale(1.05);
+}
+/* QR SECTION */
+.qr-hidden {
+  display: none;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.qr-img {
+  width: 220px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.qr-text {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #ff4d6d;
+}
+.qr-section {
+  display: none;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.qr-img {
+  width: 220px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.qr-text {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #ff4d6d;
+  font-weight: bold;
+}
+/* VIDEO GIFT */
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.gift-video {
+  width: 600px;
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+

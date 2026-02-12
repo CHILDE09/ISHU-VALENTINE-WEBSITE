@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Rose Bouquet 🌹</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="rose-page">
+
+  <h1 class="rose-title">Your Rose Bouquet</h1>
+
+  <div class="rose-wrapper">
+
+    <span class="sticker s1">❤️</span>
+    <span class="sticker s2">💖</span>
+    <span class="sticker s3">✨</span>
+    <span class="sticker s4">💫</span>
+
+    <div class="note big left">
+      I will always love you<br>no matter what 💖
+    </div>
+
+    <img src="rose.png" class="bouquet">
+
+    <div class="note big right">
+      You will forever be my<br>only option 💍
+    </div>
+
+  </div>
+
+  <div class="bottom-notes">
+    <div class="note big">
+      You are the best part<br>of my life ❤️
+    </div>
+    <div class="note big">
+      I can’t imagine life<br>without you 🥹
+    </div>
+  </div>
+
+  <!-- CLOUD BUTTONS -->
+  <div class="cloud-wrapper">
+
+    <div class="cloud" onclick="slideTo('gift1-letter.html','left')">
+      click me →
+    </div>
+
+    <div class="cloud" onclick="slideTo('yes.html','right')">
+      ← Back
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+  gsap.from(".note", { scale: 0, stagger: 0.2, duration: 0.6 });
+  gsap.from(".bouquet", { scale: 0.8, opacity: 0, duration: 0.8 });
+  gsap.from(".sticker", { opacity: 0, scale: 0, stagger: 0.1 });
+</script>
+
+</body>
+</html>

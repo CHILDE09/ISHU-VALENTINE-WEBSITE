@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yay 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Yay, you said yes!</h1>
+  <p>I made all these for you hehe 💕</p>
+
+  <div class="gifts">
+    <div class="gift" onclick="slideTo('gift1.html')">Gift 1</div>
+    <div class="gift" onclick="slideTo('gift2.html')">Gift 2</div>
+    <div class="gift" onclick="slideTo('gift3.html')">Gift 3</div>
+    <div class="gift" onclick="slideTo('gift4.html')">Gift 4</div>
+
+  </div>
+
+  <div class="actions">
+    <button class="secondary" onclick="slideTo('index.html','right')">Restart ↺</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
